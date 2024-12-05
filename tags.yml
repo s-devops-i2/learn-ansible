@@ -1,0 +1,15 @@
+- name: printing msg
+  hosts: localhost
+  tasks:
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: Vegatables
+      tags: veg
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: fruits
+      tags: fruits
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: Carrot
+      tags: veg
