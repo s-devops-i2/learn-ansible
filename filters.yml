@@ -4,4 +4,4 @@
     - name: printing filters
       ansible.builtin.debug:
         msg: "Yes i want to install"
-      when: install
+      when: install | bool
