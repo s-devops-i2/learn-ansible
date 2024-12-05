@@ -7,4 +7,14 @@
     - name: printing output
       ansible.builtin.debug:
         msg: "{{ OUTPUT }}"
-
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: Vegatables
+      tags: veg
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: fruits
+    - name: running specific task based on tags
+      ansible.builtin.debug:
+        msg: Carrot
+      tags: veg
