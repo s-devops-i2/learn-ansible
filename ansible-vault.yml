@@ -1,0 +1,8 @@
+- name: ansible vault storing password
+  hosts: localhost
+  vars:
+    PASSWORD: abcd@123
+  tasks:
+    - name: printing password
+      ansible.builtin.debug:
+        msg: "PASSWORD- {{ PASSWORD }}"

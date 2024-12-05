@@ -14,6 +14,7 @@
     - name: running specific task based on tags
       ansible.builtin.debug:
         msg: fruits
+      tags: fruits
     - name: running specific task based on tags
       ansible.builtin.debug:
         msg: Carrot
