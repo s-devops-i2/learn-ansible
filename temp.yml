@@ -1,5 +1,5 @@
 - name: printing msg
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Storing info of module
       ansible.builtin.shell: uptime
